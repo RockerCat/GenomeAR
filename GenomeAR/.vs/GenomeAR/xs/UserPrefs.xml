@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{B6AEE307-8818-DA6F-9405-CAE44EF72C6F}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ARTapToPlaceObject.cs">
     <Files>
-      <File FileName="Assets/Scripts/ARTapToPlaceObject.cs" Line="32" Column="27" />
+      <File FileName="Assets/Scripts/ARTapToPlaceObject.cs" Line="12" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="047523df-2165-4635-a8db-62b885489ac9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f01a5e94-6f04-4bf7-b4c9-fe6e2ac7cd8e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

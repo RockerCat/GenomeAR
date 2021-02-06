@@ -48,7 +48,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         }
         else
         {
-            placementIndicator.SetActive(false);
+            //placementIndicator.SetActive(false);
         }
     }
 
