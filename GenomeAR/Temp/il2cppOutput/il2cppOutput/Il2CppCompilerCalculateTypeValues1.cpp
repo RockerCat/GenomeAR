@@ -29264,50 +29264,83 @@ public:
 struct  Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
+	// UnityEngine.GameObject Hexagon::hexagonFront
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___hexagonFront_4;
 	// System.String Hexagon::itemType
-	String_t* ___itemType_4;
+	String_t* ___itemType_5;
 	// TMPro.TextMeshPro Hexagon::userText
-	TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * ___userText_5;
+	TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * ___userText_6;
 	// TMPro.TextMeshPro Hexagon::titleText
-	TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * ___titleText_6;
+	TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * ___titleText_7;
 	// LoadImage Hexagon::loadImageBackground
-	LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F * ___loadImageBackground_7;
+	LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F * ___loadImageBackground_8;
+	// System.String Hexagon::url
+	String_t* ___url_9;
+	// System.String Hexagon::title
+	String_t* ___title_10;
 
 public:
-	inline static int32_t get_offset_of_itemType_4() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___itemType_4)); }
-	inline String_t* get_itemType_4() const { return ___itemType_4; }
-	inline String_t** get_address_of_itemType_4() { return &___itemType_4; }
-	inline void set_itemType_4(String_t* value)
+	inline static int32_t get_offset_of_hexagonFront_4() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___hexagonFront_4)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_hexagonFront_4() const { return ___hexagonFront_4; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_hexagonFront_4() { return &___hexagonFront_4; }
+	inline void set_hexagonFront_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___itemType_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___itemType_4), (void*)value);
+		___hexagonFront_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___hexagonFront_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_userText_5() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___userText_5)); }
-	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * get_userText_5() const { return ___userText_5; }
-	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 ** get_address_of_userText_5() { return &___userText_5; }
-	inline void set_userText_5(TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * value)
+	inline static int32_t get_offset_of_itemType_5() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___itemType_5)); }
+	inline String_t* get_itemType_5() const { return ___itemType_5; }
+	inline String_t** get_address_of_itemType_5() { return &___itemType_5; }
+	inline void set_itemType_5(String_t* value)
 	{
-		___userText_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___userText_5), (void*)value);
+		___itemType_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___itemType_5), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_titleText_6() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___titleText_6)); }
-	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * get_titleText_6() const { return ___titleText_6; }
-	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 ** get_address_of_titleText_6() { return &___titleText_6; }
-	inline void set_titleText_6(TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * value)
+	inline static int32_t get_offset_of_userText_6() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___userText_6)); }
+	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * get_userText_6() const { return ___userText_6; }
+	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 ** get_address_of_userText_6() { return &___userText_6; }
+	inline void set_userText_6(TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * value)
 	{
-		___titleText_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___titleText_6), (void*)value);
+		___userText_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___userText_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_loadImageBackground_7() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___loadImageBackground_7)); }
-	inline LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F * get_loadImageBackground_7() const { return ___loadImageBackground_7; }
-	inline LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F ** get_address_of_loadImageBackground_7() { return &___loadImageBackground_7; }
-	inline void set_loadImageBackground_7(LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F * value)
+	inline static int32_t get_offset_of_titleText_7() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___titleText_7)); }
+	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * get_titleText_7() const { return ___titleText_7; }
+	inline TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 ** get_address_of_titleText_7() { return &___titleText_7; }
+	inline void set_titleText_7(TextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2 * value)
 	{
-		___loadImageBackground_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___loadImageBackground_7), (void*)value);
+		___titleText_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___titleText_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_loadImageBackground_8() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___loadImageBackground_8)); }
+	inline LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F * get_loadImageBackground_8() const { return ___loadImageBackground_8; }
+	inline LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F ** get_address_of_loadImageBackground_8() { return &___loadImageBackground_8; }
+	inline void set_loadImageBackground_8(LoadImage_tC80203960AB3DF29EC3B8663E672DEBD062E9B3F * value)
+	{
+		___loadImageBackground_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___loadImageBackground_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_url_9() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___url_9)); }
+	inline String_t* get_url_9() const { return ___url_9; }
+	inline String_t** get_address_of_url_9() { return &___url_9; }
+	inline void set_url_9(String_t* value)
+	{
+		___url_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___url_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_title_10() { return static_cast<int32_t>(offsetof(Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667, ___title_10)); }
+	inline String_t* get_title_10() const { return ___title_10; }
+	inline String_t** get_address_of_title_10() { return &___title_10; }
+	inline void set_title_10(String_t* value)
+	{
+		___title_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___title_10), (void*)value);
 	}
 };
 
@@ -47263,12 +47296,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2793[18] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2794;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2794 = { sizeof (Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2794[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2794[7] = 
 {
-	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_itemType_4(),
-	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_userText_5(),
-	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_titleText_6(),
-	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_loadImageBackground_7(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_hexagonFront_4(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_itemType_5(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_userText_6(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_titleText_7(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_loadImageBackground_8(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_url_9(),
+	Hexagon_t411FDD5DE1CD8FA7429FFE025CCF8175707E1667::get_offset_of_title_10(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2795;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2795 = { sizeof (HexagonsManager_tEC4FD249846BB632B606C9F3D91EF0BBB9226536), -1, 0, 0 };
