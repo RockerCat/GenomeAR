@@ -5,10 +5,12 @@ using UnityEngine;
 public class GenomeManager : MonoBehaviour
 {
     public Communicator communicator;
+    public UIManager uIManager;
     private HexagonsManager hexagonsManager;
     private string picture;
     private string userName;
-    private string[] menuList = {"Current Skills", "Skills to develop", "Awards", "jobs", "Projects", "Publications", "Education", "Opportunities", "Languages", "Personality" };
+    private string[] menuList = {"Current Skills", "Skills to develop", "Awards", "Jobs", "Projects", "Publications", "Education", "Opportunities", "Languages", "Personality" };
+
     private JSONObject strengths;
     private JSONObject interests;
     private JSONObject experiences;
@@ -27,10 +29,12 @@ public class GenomeManager : MonoBehaviour
         
     }
 
-    public void SetGenome()
+    public void SetGenome(string userName)
     {
         hexagonsManager = FindObjectOfType<HexagonsManager>();
-        communicator.GetBio("torrenegra");
+        hexagonsManager.HexagonLoading.gameObject.SetActive(true);
+        hexagonsManager.ClearAllHexagons();
+        communicator.GetBio(userName);
     }
 
     public void OnGetBio(JSONObject dataJSON)
@@ -53,8 +57,12 @@ public class GenomeManager : MonoBehaviour
         professionalCultureGenomeResults = dataJSON["professionalCultureGenomeResults"];
 
         hexagonsManager.SetUserHexagon(userName, picture);
+        SetBio();
+    }
+
+    public void SetBio()
+    {
         hexagonsManager.SetMenuHexagons(menuList);
-        //hexagonsManager.SetHexagons(strengths);
     }
 
     public void UpdateBio(string _key)
@@ -62,7 +70,17 @@ public class GenomeManager : MonoBehaviour
         hexagonsManager.ClearHexagons();
         switch (_key)
         {
-            case "Current Skills": hexagonsManager.SetHexagons(strengths); break;
+            case "Current Skills"       : hexagonsManager.SetHexagons(strengths); break;
+            case "Skills to develop"    : hexagonsManager.SetHexagons(interests); break;
+            case "Awards"               : hexagonsManager.SetHexagons(awards); break;
+            case "Jobs"                 : hexagonsManager.SetHexagons(jobs); break;
+            case "Projects"             : hexagonsManager.SetHexagons(projects); break;
+            case "Publications"         : hexagonsManager.SetHexagons(publications); break;
+            case "Education"            : hexagonsManager.SetHexagons(education); break;
+            case "Opportunities"        : hexagonsManager.SetHexagons(opportunities); break;
+            case "Languages"            : hexagonsManager.SetHexagons(languages); break;
+            case "Personality"          : hexagonsManager.SetHexagons(personalityTraitsResults); break;
         }
+        uIManager.SetGenomeDetail();
     }
 }

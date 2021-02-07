@@ -5,13 +5,20 @@ using UnityEngine;
 public class HexagonsManager : MonoBehaviour
 {
     private GameObject hexagon0;
+    public Hexagon HexagonLoading;
     public Hexagon HexagonPrefab;
 
     private float constX = 0.078f;
     private float constY = 0.131f;
 
+    private void Start()
+    {
+        HexagonLoading.SetHexagon("Select UserName");
+    }
+
     public void SetUserHexagon(string _name, string _url)
     {
+        HexagonLoading.gameObject.SetActive(false);
         hexagon0 = Instantiate(HexagonPrefab.gameObject, transform.position, Quaternion.identity);
         hexagon0.transform.parent = this.transform;
         hexagon0.GetComponent<Hexagon>().itemType = "UserInfo";
@@ -20,6 +27,7 @@ public class HexagonsManager : MonoBehaviour
 
     public void SetMenuHexagons(string[] _itemList)
     {
+        ClearHexagons();
         int aux = 0;
         int auxY = 1;
         for (int i = 0; i < _itemList.Length; i++)
@@ -73,12 +81,26 @@ public class HexagonsManager : MonoBehaviour
         {
             if(child.gameObject.GetComponent<Hexagon>())
             {
-                if (child.gameObject.GetComponent<Hexagon>().itemType != "UserInfo")
+                if ((child.gameObject.GetComponent<Hexagon>().itemType != "UserInfo") && child.gameObject.GetComponent<Hexagon>().tag != "HexagonLoading")
                 {
                     Destroy(child.gameObject);
                 }
             }          
              
+        }
+    }
+
+    public void ClearAllHexagons()
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.gameObject.GetComponent<Hexagon>())
+            {
+                if (child.gameObject.GetComponent<Hexagon>().tag != "HexagonLoading")
+                {
+                    Destroy(child.gameObject);
+                }
+            }
         }
     }
 

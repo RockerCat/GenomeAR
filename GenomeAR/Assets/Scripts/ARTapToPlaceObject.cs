@@ -11,13 +11,14 @@ public class ARTapToPlaceObject : MonoBehaviour
     public GameObject placementIndicator;
     public GameObject objectToPlace;
     public GenomeManager genomeManager;
-    
+    public UIManager uIManager;
+
     private Pose PlacementPose;
     private ARRaycastManager aRRaycastManager;
     private bool placementPoseIsValid = false;
     private bool hexagonsPlaced = false;
     private bool showPlacement = true;
-    private string state = "Init";
+    public string state = "Place";
 
     void Start()
     {
@@ -26,26 +27,31 @@ public class ARTapToPlaceObject : MonoBehaviour
 
     void Update()
     {
-        if (state == "Init")
+        if (state == "Place")
         {
+            uIManager.SetPlaceUI();
             UpdatePlacementPose();
             UpdatePlacementIndicator();
 
             if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !hexagonsPlaced)
             {
-                Debug.Log("ARTapToPlaceObject - PlaceObject");
-                PlaceObject();
+                PlaceGenomeBase();
+                state = "Form";
+                uIManager.SetFormUI();
             }
+        }
+        else if (state == "Form")
+        {
         }
         else if (state == "Genome")
         {
             RaycastHit hit;
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && state != "Navigation")
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit))
                 {
-                    if(hit.collider.gameObject.tag == "Hexagon")
+                    if (hit.collider.gameObject.tag == "Hexagon")
                     {
                         Hexagon hexagonCollide = hit.transform.gameObject.GetComponent<Hexagon>();
                         genomeManager.UpdateBio(hexagonCollide.itemType);
@@ -55,13 +61,12 @@ public class ARTapToPlaceObject : MonoBehaviour
         }
     }
 
-    private void PlaceObject()
+    private void PlaceGenomeBase()
     {
         Instantiate(objectToPlace, PlacementPose.position, PlacementPose.rotation);
         showPlacement = false;
         hexagonsPlaced = true;
         Debug.Log("genomeManager: " + genomeManager);
-        genomeManager.SetGenome();
         state = "Genome";
     }
 

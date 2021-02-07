@@ -7,6 +7,8 @@ ScriptsOnlyBuild:
     - Hexagon
     - HexagonsManager
     - LoadImage
+    - Logo
+    - UIManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -23,13 +25,92 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARRaycastManager
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Outline
+    - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/Enter.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11286}
+    - Class: 114
+      Script: {instanceID: 11524}
+    - Class: 114
+      Script: {instanceID: 11946}
+    - Class: 114
+      Script: {instanceID: 12012}
+    - Class: 114
+      Script: {instanceID: 12048}
+    - Class: 114
+      Script: {instanceID: 12802}
+    - Class: 114
+      Script: {instanceID: 12818}
+    - Class: 114
+      Script: {instanceID: 13122}
+    - Class: 114
+      Script: {instanceID: 13312}
+    - Class: 114
+      Script: {instanceID: 13576}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Main.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -49,54 +130,72 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11538}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11690}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 12018}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 12746}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 12760}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12012}
     - Class: 114
-      Script: {instanceID: 12954}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 13106}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 13174}
+      Script: {instanceID: 12520}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 12642}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 13394}
+      Script: {instanceID: 12764}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 25768}
+      Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 27486}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 29976}
+      Script: {instanceID: 13122}
     - Class: 114
-      Script: {instanceID: 34390}
+      Script: {instanceID: 13148}
     - Class: 114
-      Script: {instanceID: 34434}
+      Script: {instanceID: 13216}
+    - Class: 114
+      Script: {instanceID: 13328}
+    - Class: 114
+      Script: {instanceID: 13438}
+    - Class: 114
+      Script: {instanceID: 13454}
+    - Class: 114
+      Script: {instanceID: 13466}
+    - Class: 114
+      Script: {instanceID: 13492}
+    - Class: 114
+      Script: {instanceID: 13576}
+    - Class: 114
+      Script: {instanceID: 13630}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -105,7 +204,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
     - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
@@ -316,6 +419,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Logo
+  - hash:
+      serializedVersion: 2
       Hash: e8733e39efa851172df1c9eaef062265
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -382,6 +491,12 @@ ScriptsOnlyBuild:
     className: ARKitLoader
   - hash:
       serializedVersion: 2
+      Hash: c1a47dc1261b8e5486f36c84b6d861c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fake
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -392,6 +507,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c4164428f55a8c8472e57c46e9e7e52a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GenomeManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -410,6 +531,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 7d758d1cd98d910cc5612971c87f61ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Communicator
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -440,6 +567,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 75ff1bb97385e93c16214bd520d7a086
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: b3443773c5286cc4bf915516aea2bc01
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadImage
   - hash:
       serializedVersion: 2
       Hash: 982acebdb29318e47aa2d3c2cb7e1539
@@ -574,7 +713,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 59dfc667c3e37407d2f04e3375565c39
+      Hash: f83423fa0abb2baa784f5c88a0c206e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARTapToPlaceObject
@@ -632,6 +771,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: edda41d162041ecd4e6b1ff012c63000
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Hexagon
   - hash:
       serializedVersion: 2
       Hash: 20d20168517d1c0e098918311aa95bbb
@@ -736,47 +881,18 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: edda41d162041ecd4e6b1ff012c63000
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Hexagon
-  - hash:
-      serializedVersion: 2
-      Hash: b3443773c5286cc4bf915516aea2bc01
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoadImage
-  - hash:
-      serializedVersion: 2
-      Hash: 53a28fdd8bb907df9af1719e6c25510f
+      Hash: f6f0bcce3736285989ddb8d03ec18b30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HexagonsManager
   - hash:
       serializedVersion: 2
-      Hash: 9ee5838957afa26c6d3f5243fb72bc6b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GenomeManager
-  - hash:
-      serializedVersion: 2
-      Hash: 7d758d1cd98d910cc5612971c87f61ad
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Communicator
-  - hash:
-      serializedVersion: 2
-      Hash: 7d758d1cd98d910cc5612971c87f61ad
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Fake
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
   platform: 9
   scenePathNames:
+  - Assets/Scenes/Enter.unity
   - Assets/Scenes/Main.unity
   playerPath: /Volumes/Millennium Falcon/Alex/GenomeAR/GenomeAR/output/GenomeAR

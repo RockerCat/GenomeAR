@@ -74,6 +74,8 @@
     <Compile Include="Assets\Scripts\JSON\JSONTemplates.cs" />
     <Compile Include="Assets\Scripts\JSON\VectorTemplates.cs" />
     <Compile Include="Assets\Scripts\LoadImage.cs" />
+    <Compile Include="Assets\Scripts\Logo.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Scripts\JSON\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
