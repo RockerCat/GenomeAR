@@ -1,7 +1,13 @@
 ﻿<Properties StartupConfiguration="{B6AEE307-8818-DA6F-9405-CAE44EF72C6F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ARTapToPlaceObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HexagonsManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/ARTapToPlaceObject.cs" Line="12" Column="21" />
+      <File FileName="Assets/Scripts/ARTapToPlaceObject.cs" Line="54" Column="14" />
+      <File FileName="Assets/Scripts/Hexagon.cs" Line="8" Column="27" />
+      <File FileName="Assets/Scripts/HexagonsManager.cs" Line="27" Column="62" />
+      <File FileName="Assets/Scripts/GenomeManager.cs" Line="62" Column="41" />
+      <File FileName="Assets/Scripts/Communicator.cs" Line="28" Column="42" />
+      <File FileName="Assets/Scripts/LoadImage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Fake.cs" Line="28" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
