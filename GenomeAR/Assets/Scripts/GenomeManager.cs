@@ -39,7 +39,6 @@ public class GenomeManager : MonoBehaviour
 
     public void OnGetBio(JSONObject dataJSON)
     {
-        Debug.Log("OnGetBio: " + dataJSON);
         JSONObject result = dataJSON["person"];
         picture = result.GetField("picture").str;
         userName = result.GetField("name").str;
@@ -55,9 +54,8 @@ public class GenomeManager : MonoBehaviour
         languages = dataJSON["languages"];
         personalityTraitsResults = dataJSON["personalityTraitsResults"];
         professionalCultureGenomeResults = dataJSON["professionalCultureGenomeResults"];
-
         hexagonsManager.SetUserHexagon(userName, picture);
-        SetBio();
+        SetBio();   
     }
 
     public void SetBio()
@@ -77,9 +75,9 @@ public class GenomeManager : MonoBehaviour
             case "Projects"             : hexagonsManager.SetHexagons(projects); break;
             case "Publications"         : hexagonsManager.SetHexagons(publications); break;
             case "Education"            : hexagonsManager.SetHexagons(education); break;
-            case "Opportunities"        : hexagonsManager.SetHexagons(opportunities); break;
-            case "Languages"            : hexagonsManager.SetHexagons(languages); break;
-            case "Personality"          : hexagonsManager.SetHexagons(personalityTraitsResults); break;
+            case "Opportunities"        : hexagonsManager.SetHexagons(opportunities, "interest"); break;
+            case "Languages"            : hexagonsManager.SetHexagons(languages, "language"); break;
+            case "Personality"          : hexagonsManager.SetPersonalityHexagons(personalityTraitsResults); break;
         }
         uIManager.SetGenomeDetail();
     }
