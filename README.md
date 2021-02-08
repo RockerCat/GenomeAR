@@ -48,8 +48,9 @@ That was my journey (2 days of coding). Feels like a hackathon!
 
 # Youtube Videos:
 
-https://www.youtube.com/watch?v=jzdcgOUnaaI
-https://www.youtube.com/watch?v=T3XCmeNVwk8
+- https://www.youtube.com/watch?v=jzdcgOUnaaI
+
+- https://www.youtube.com/watch?v=T3XCmeNVwk8
 
 
 I hope you like it! And thanks for the opportunity.
